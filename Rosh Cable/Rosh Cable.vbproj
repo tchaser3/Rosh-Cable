@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B95BCDEA-DCB4-4885-AB8F-DC53A1C669B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Rosh_Cable.My.MyApplication</StartupObject>
+    <RootNamespace>Rosh_Cable</RootNamespace>
+    <AssemblyName>Rosh Cable</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Rosh Cable.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Rosh Cable.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPartNumber.Designer.vb">
+      <DependentUpon>AddPartNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPartNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BJCReelIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BJCReelIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CloseProgram.Designer.vb">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CloseProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateBJCReelID.Designer.vb">
+      <DependentUpon>CreateBJCReelID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateBJCReelID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePartNumberID.Designer.vb">
+      <DependentUpon>CreatePartNumberID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePartNumberID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDCreation.Designer.vb">
+      <DependentUpon>IDCreation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IDCreation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDCreationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IDCreationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataValidation.vb" />
+    <Compile Include="IssueDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IssueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleUnderDevelopment.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PartNumberDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveCable.Designer.vb">
+      <DependentUpon>ReceiveCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiveDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceiveDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturnDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RochDataTier.vb" />
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddPartNumber.resx">
+      <DependentUpon>AddPartNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseProgram.resx">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateBJCReelID.resx">
+      <DependentUpon>CreateBJCReelID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePartNumberID.resx">
+      <DependentUpon>CreatePartNumberID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDCreation.resx">
+      <DependentUpon>IDCreation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveCable.resx">
+      <DependentUpon>ReceiveCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BJCReelIDDataSet.xsc">
+      <DependentUpon>BJCReelIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BJCReelIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BJCReelIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BJCReelIDDataSet.xss">
+      <DependentUpon>BJCReelIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CableDataSet.xsc">
+      <DependentUpon>CableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CableDataSet.xss">
+      <DependentUpon>CableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesDataSet.xsc">
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesDataSet.xss">
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IDCreationDataSet.xsc">
+      <DependentUpon>IDCreationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IDCreationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IDCreationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IDCreationDataSet.xss">
+      <DependentUpon>IDCreationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssueDataSet.xsc">
+      <DependentUpon>IssueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IssueDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IssueDataSet.xss">
+      <DependentUpon>IssueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="PartNumberDataSet.xsc">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberDataSet.xss">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsc">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberIDDataSet.xss">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceiveDataSet.xsc">
+      <DependentUpon>ReceiveDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceiveDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceiveDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceiveDataSet.xss">
+      <DependentUpon>ReceiveDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReturnDataSet.xsc">
+      <DependentUpon>ReturnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReturnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReturnDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReturnDataSet.xss">
+      <DependentUpon>ReturnDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Roch Cable.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
